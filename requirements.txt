@@ -1,0 +1,8 @@
+Flask
+requests
+gunicorn  # For Heroku deployment
+SQLAlchemy  # For easier database management
+Flask-SQLAlchemy  # Integrates SQLAlchemy with Flask
+python-dotenv  # To manage environment variables
+google-api-python-client
+youtube_transcript_api
