@@ -46,7 +46,7 @@ def get_recipe_from_llm(transcript_text):
     """
 
     # read system instructions from instructions.txt
-    with open('instructions.txt', 'r', encoding='utf-8') as file:
+    with open('llm-prompts/instructions.txt', 'r', encoding='utf-8') as file:
         system_instructions = file.read()
 
     messages = []

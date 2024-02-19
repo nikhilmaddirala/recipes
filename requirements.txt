@@ -2,5 +2,5 @@ python-dotenv
 youtube_transcript_api
 openai
 streamlit
-google-api-python-client
-supabase-py
+# google-api-python-client
+# supabase-py
