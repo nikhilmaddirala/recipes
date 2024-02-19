@@ -12,7 +12,7 @@ import pandas as pd
 load_dotenv()
 
 # client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
-client = OpenAI()
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 def get_video_id(url):
     video_id = url.split('v=')[1]  # Extract video ID from URL
