@@ -1,0 +1,36 @@
+{
+    "title": "Anabolic Oreo McFlurry",
+    "ingredients": [
+        { "name": "ice", "quantity": "480", "unit": "grams" },
+        { "name": "1% milk", "quantity": "130", "unit": "grams" },
+        { "name": "fat-free Greek yogurt", "quantity": "120", "unit": "grams" },
+        { "name": "vanilla extract", "quantity": "4.2", "unit": "grams" },
+        { "name": "salt", "quantity": "2", "unit": "grams" },
+        { "name": "vanilla Jell-O sugar-free", "quantity": "7", "unit": "grams" },
+        { "name": "xanthan gum", "quantity": "1.5", "unit": "grams" },
+        { "name": "guar gum", "quantity": "1.5", "unit": "grams" },
+        { "name": "cookies and cream whey casein blend protein", "quantity": "42", "unit": "grams" },
+        { "name": "black cocoa powder", "quantity": "10", "unit": "grams" },
+        { "name": "swerve sweetener", "quantity": "30", "unit": "grams" },
+        { "name": "Oreo cookies", "quantity": "4", "unit": "cookies" }
+    ],
+    "instructions": [
+        "Crush 480 grams of ice on high for one minute. Do not touch the ice afterwards.",
+        "Add 130 grams of 1% milk, 120 grams of fat-free Greek yogurt, 4.2 grams of vanilla extract, and 2 grams of salt into the blender.",
+        "Mix well to ensure there's no ice layer on the bottom.",
+        "Add 7 grams of vanilla Jell-O sugar-free, 1.5 grams of xanthan gum, 1.5 grams of guar gum, 42 grams of cookies and cream whey casein blend protein, 10 grams of black cocoa powder, and 30 grams of swerve sweetener.",
+        "Crush 3 Oreo cookies and add them to the blender.",
+        "Blend on high for one more minute.",
+        "Mix everything thoroughly again from top to bottom.",
+        "Blend on high for one more minute.",
+        "Chop the last Oreo cookie and sprinkle on top of the McFlurry before serving."
+    ],
+    "nutritional_info": {
+        "calories": "543",
+        "fat_grams": "15",
+        "protein_grams": "52",
+        "carbs_grams": "89",
+        "fiber_grams": "7",
+        "number_of_servings": "6"
+    }
+}

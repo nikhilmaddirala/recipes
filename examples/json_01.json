@@ -1,0 +1,26 @@
+{
+    "title": "High Protein Peanut Butter and Jelly Sandwich",
+    "ingredients": [
+        { "name": "natural peanut butter", "quantity": "32", "unit": "grams" },
+        { "name": "sugar-free strawberry preserves", "quantity": "51", "unit": "grams" },
+        { "name": "100% whole wheat high-fiber whole grain bread", "quantity": "2", "unit": "slices" },
+        { "name": "plain Greek yogurt", "quantity": "56", "unit": "grams" },
+        { "name": "vanilla protein powder", "quantity": "1", "unit": "scoop" }
+    ],
+    "instructions": [
+        "Mix 32 grams (or 2 tablespoons) of natural peanut butter and 56 grams of plain Greek yogurt in a mixing bowl.",
+        "Add 1 scoop of vanilla protein powder to the mixing bowl and mix well until homogeneous, creating a creamy protein-enriched peanut butter.",
+        "Spread the peanut butter mixture on one slice of the 100% whole wheat high-fiber whole grain bread.",
+        "Spread 51 grams (or about 3 tablespoons) of sugar-free strawberry preserves on the other slice of bread.",
+        "Join the two slices of bread together to form the sandwich.",
+        "Cut the sandwich diagonally across the middle.",
+        "Enjoy your Healthy Protein Peanut Butter and Jelly Sandwich."
+    ],
+    "nutritional_info": {
+        "calories": "445",
+        "fat_grams": "18",
+        "protein_grams": "42",
+        "carbs_grams": "41",
+        "fiber_grams": "16"
+    }
+}

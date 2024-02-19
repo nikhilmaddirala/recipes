@@ -2,3 +2,4 @@ Flask
 python-dotenv
 youtube_transcript_api
 openai
+streamlit
