@@ -15,7 +15,7 @@ load_dotenv()
 # client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
-def get_youtube_id(url, fuzzy=True):
+def get_video_id(url, fuzzy=True):
     """Extracts YouTube video ID from a variety of URL formats."""
     patterns = [
         r"youtu\.be/([^#\&\?]{11})",  # youtu.be/<id>
