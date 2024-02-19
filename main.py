@@ -23,55 +23,9 @@ def get_transcript_text(video_id):
     transcript_text = ' '.join([x['text'] for x in transcript])
     return transcript_text
 
-def get_recipe_from_assistant(transcript_text):
-    """
-
-    Waits for a run to complete and returns the response.:param client: The OpenAI client object.
-    :param thread_id: The ID of the thread.
-    :param run_id: The ID of the run.
-    :param sleep_interval: Time in seconds to wait between checks.
-    :return: The response from the assistant.
-    """
-
-    assistant = client.beta.assistants.retrieve('asst_2wWfww4gtLttiQspYpGWFfoA')
-
-    thread = client.beta.threads.create()
-
-    message = client.beta.threads.messages.create(
-        thread_id=thread.id,
-        role="user",
-        content=transcript_text
-    )
-
-    run = client.beta.threads.runs.create(
-    thread_id=thread.id,
-    assistant_id=assistant.id,
-    )
-
-    while True:
-        try:
-            run = client.beta.threads.runs.retrieve(thread_id=thread.id, run_id=run.id)
-            if run.completed_at:
-                elapsed_time = run.completed_at - run.created_at
-                formatted_elapsed_time = time.strftime(
-                    "%H:%M:%S", time.gmtime(elapsed_time)
-                )
-                # print(f"Run completed in {formatted_elapsed_time}")
-                logging.info(f"Run completed in {formatted_elapsed_time}")
-                # Get messages here once Run is completed!
-                messages = client.beta.threads.messages.list(thread_id=thread.id)
-                last_message = messages.data[0]
-                response = last_message.content[0].text.value
-                return response
-        except Exception as e:
-            logging.error(f"An error occurred while retrieving the run: {e}")
-            break
-        logging.info("Waiting for run to complete...")
-        time.sleep(5)
-
 def get_recipe_from_llm(transcript_text):
     """
-    Pass recipe and instructions to OpenAI gpt-4-turbo and get recipe
+    Pass recipe and instructions to OpenAI and get recipe
     """
 
     # read system instructions from instructions.txt
@@ -98,12 +52,6 @@ def get_recipe_from_llm(transcript_text):
     recipe_from_llm = response.choices[0].message.content
     return recipe_from_llm
 
-
-def get_recipe_from_url(url):
-    video_id = get_video_id(url)
-    transcript_text = get_transcript_text(video_id)
-    recipe_from_llm = get_recipe_from_assistant(transcript_text)
-    return video_id, transcript_text, recipe_from_llm
 
 # Main function to run the program
 def main():
